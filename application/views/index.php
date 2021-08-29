@@ -13,14 +13,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap"
         rel="stylesheet">
-    <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css"
-        rel="stylesheet">
-    <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css"
-        rel="stylesheet">
-    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js">
-    </script>
-    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js">
-    </script>
+   
     <style>
    
     </style>
@@ -64,43 +57,15 @@
         <h1>Products</h1>
     </div>
     <div class="container-fluid">
-        <div class="row" id="items_grocery">
+        <div class="row" id="products">
            
         </div>
     </div>
 
 
 
-
-    <script>
-    $('.carousel-main').owlCarousel({
-
-        loop: true,
-        autoplay: true,
-        autoplayTimeout: 1500,
-        margin: 10,
-        nav: true,
-        dots: false,
-        navText: ['<span class="fas fa-chevron-left fa-2x text-dark"></span>',
-            '<span class="fas fa-chevron-right fa-2x text-dark"></span>'
-        ],
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 3
-            },
-            1000: {
-                items: 5
-            }
-        }
-    })
-    </script>
-
     <script>
     $(document).ready(function() {
-        // $("#vikas").hide();
         $.ajax({
             type: 'ajax',
             method: 'get',
@@ -123,7 +88,7 @@
                 var html = '';
                 var i;
                 for (i = 0; i < response.length; i++) {
-                    $('#items_grocery').html(
+                    $('#products').html(
                         html +=
                         '<div class="col-2">' +
                         '<div class="card" style="width: 18rem;">' +
@@ -145,7 +110,7 @@
 
 
 
-        $('#vikas').on('click', '.add_cart', function() {
+        $('#products').on('click', '.add_cart', function() {
 
             var id = $(this).attr('data');
 
