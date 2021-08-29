@@ -21,65 +21,7 @@
     </script>
     <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js">
     </script>
-    <style>
-    @media (min-width: 1200px) {
-
-        .container,
-        .container-lg,
-        .container-md,
-        .container-sm,
-        .container-xl {
-            max-width: 100%;
-        }
-    }
-
-    @media (min-width: 700px) {
-
-        .container,
-        .container-lg,
-        .container-md,
-        .container-sm,
-        .container-xl {
-            max-width: 100%;
-        }
-    }
-
-    .col-carousel {
-        margin: 0 0;
-    }
-
-    /* owl nav */
-    .owl-prev span,
-    .owl-next span {
-        color: #FFF;
-    }
-
-    .owl-prev span:hover,
-    .owl-next span:hover {
-        color: #8199A3;
-    }
-
-    .owl-prev,
-    .owl-next {
-        position: absolute;
-        top: 0;
-        height: 100%;
-    }
-
-    .owl-prev {
-        left: 7px;
-    }
-
-    .owl-next {
-        right: 7px;
-    }
-
-    /* removing blue outline from buttons */
-    button:focus,
-    button:active {
-        outline: none;
-    }
-    </style>
+   
 </head>
 
 <body>
@@ -103,33 +45,25 @@
                 </li>
 
 
-
-                <li class="nav-item px-xl-2 pl-3 pt-xl-2">
-                    <a href="digital_innovation/digital_innovation.php" class="nav-link text-light">
-                        <i class="fas fa-user-lock">Admin</i>
-                    </a>
-                </li>
-
-
             </ul>
 
 
         </div>
     </nav>
 
-    <div class="alert alert-success mt-5" role="alert" id="message_success" style="display:none;margin-top:80px;">
+    <div class="alert alert-success" role="alert" id="message_success" style="display:none;margin-top:80px;">
 
     </div>
 
-    <div class="alert alert-danger mt-5" role="alert" id="message_fail" style="display:none;margin-top:80px;">
+    <div class="alert alert-danger " role="alert" id="message_fail" style="display:none;margin-top:80px;">
     </div>
     <div class="pt-5 mt-5 text-center">
         <h1>Cart Items</h1>
     </div>
 
-    <div class="container mt-5">
+    <div class="container-fluid mt-5">
         <div class="row">
-            <div class="col-9">
+            <div class="col-12 col-xl-9">
                 <table class="table table-bordered">
                     <thead>
                         <tr>
@@ -149,7 +83,7 @@
                 </table>
 
             </div>
-            <div class="col-3">
+            <div class="col-12 col-xl-3">
 
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
@@ -234,7 +168,6 @@
 
 
         });
-        // $("#vikas").hide();
 
 
         function showCart() {

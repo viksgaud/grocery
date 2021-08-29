@@ -47,14 +47,6 @@
                 </li>
 
 
-
-                <li class="nav-item px-xl-2 pl-3 pt-xl-2">
-                    <a href="digital_innovation/digital_innovation.php" class="nav-link text-light">
-                        <i class="fas fa-user-lock">Admin</i>
-                    </a>
-                </li>
-
-
             </ul>
 
 
@@ -72,23 +64,9 @@
         <h1>Products</h1>
     </div>
     <div class="container-fluid">
-        <div class="row" id="vikas">
+        <div class="row" id="items_grocery">
            
         </div>
-    </div>
-
-
-
-
-    <!-- <div class="container">
-	<div class="row align-items-center">
-		<div class="col-12 col-carousel">
-			<div class="owl-carousel carousel-main" >
-				<div></div>
-				
-			</div>
-		</div>
-	</div> -->
     </div>
 
 
@@ -145,7 +123,7 @@
                 var html = '';
                 var i;
                 for (i = 0; i < response.length; i++) {
-                    $('#vikas').html(
+                    $('#items_grocery').html(
                         html +=
                         '<div class="col-2">' +
                         '<div class="card" style="width: 18rem;">' +
